@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3306;
 app.use(bodyParser.json({ limit: '50mb' }))
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + ' https://mreader.herokuapp.com/public'))
     // app.use('/profile', express.static(__dirname + '/public/profile'))
 
 app.use('/user', user)

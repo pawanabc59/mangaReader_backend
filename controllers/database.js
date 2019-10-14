@@ -18,8 +18,8 @@ function setProfilePic (url,email_id, cb) {
   var sql = 'UPDATE `users` SET `profile_picture`="'+url+'" WHERE email_id = "'+email_id+'"' 
   conn.query(sql, function (err, result) {
     var sql2  = 'select * from the users where email_id = "'+email_id+'"'
-    conn.query(sql2, function(err, result){
-      cb(result)
+    conn.query(sql2, function(err, result1){
+      cb(result1)
     })
     
   })

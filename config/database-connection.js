@@ -5,6 +5,10 @@ var connection = mysql.createConnection({
   user: 'ZfvrVvpz4B',
   password: 'HnZ9TeXnQw',
   database: 'ZfvrVvpz4B'
+  // host: 'localhost',
+  // user: 'root',
+  // password: '',
+  // database: 'manga'
 })
 
 connection.connect(function (err) {

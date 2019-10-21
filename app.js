@@ -18,8 +18,4 @@ app.use('/user', user)
 app.use('/manga', manga)
 app.use('/books', books)
 
-<<<<<<< HEAD
 app.listen(PORT)
-=======
-app.listen(PORT)
->>>>>>> be36ec7f0021eaf630e1500fc6cb6ec6428d1083

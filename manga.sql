@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2019 at 08:26 PM
+-- Generation Time: Oct 31, 2019 at 04:41 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -70,7 +70,28 @@ INSERT INTO `book_favourites` (`email`, `book_id`) VALUES
 ('deepak@gmail.com', 2),
 ('pk@gmail.com', 3),
 ('pk@gmail.com', 4),
-('pk@gmail.com', 2);
+('pk@gmail.com', 2),
+('jayesh@gmail.com', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `book_rating`
+--
+
+CREATE TABLE `book_rating` (
+  `book_id` int(10) NOT NULL,
+  `email_id` varchar(30) NOT NULL,
+  `rating` float(3,1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `book_rating`
+--
+
+INSERT INTO `book_rating` (`book_id`, `email_id`, `rating`) VALUES
+(3, 'jayesh@gmail.com', 5.0),
+(2, 'jayesh@gmail.com', 4.0);
 
 -- --------------------------------------------------------
 
@@ -131,7 +152,10 @@ CREATE TABLE `chapter_rating` (
 
 INSERT INTO `chapter_rating` (`chapter_id`, `email_id`, `rating`) VALUES
 (1, 'jayesh@gmail.com', 5.0),
-(2, 'jayesh@gmail.com', 4.5);
+(2, 'jayesh@gmail.com', 4.5),
+(5, 'jayesh@gmail.com', 4.5),
+(7, 'jayesh@gmail.com', 4.5),
+(4, 'jayesh@gmail.com', 5.0);
 
 -- --------------------------------------------------------
 
@@ -156,7 +180,9 @@ INSERT INTO `favourites` (`email_id`, `manga_id`) VALUES
 ('nilesh.dbit@gmailcom', 2),
 ('deepak@gmail.com', 1),
 ('pk@gmail.com', 1),
-('pk@gmail.com', 2);
+('pk@gmail.com', 2),
+('jayesh@gmail.com', 1),
+('jayesh@gmail.com', 3);
 
 -- --------------------------------------------------------
 
@@ -541,7 +567,31 @@ INSERT INTO `recent` (`email_id`, `manga_id`, `at_time`) VALUES
 ('jayesh@gmail.com', 1, '2019-10-26 23:19:13'),
 ('jayesh@gmail.com', 1, '2019-10-26 23:30:58'),
 ('jayesh@gmail.com', 1, '2019-10-26 23:36:25'),
-('jayesh@gmail.com', 1, '2019-10-26 23:42:56');
+('jayesh@gmail.com', 1, '2019-10-26 23:42:56'),
+('jayesh@gmail.com', 1, '2019-10-30 19:50:39'),
+('jayesh@gmail.com', 1, '2019-10-30 19:59:29'),
+('jayesh@gmail.com', 1, '2019-10-30 20:00:37'),
+('jayesh@gmail.com', 1, '2019-10-30 20:03:04'),
+('jayesh@gmail.com', 1, '2019-10-30 20:03:27'),
+('jayesh@gmail.com', 1, '2019-10-30 20:19:35'),
+('jayesh@gmail.com', 1, '2019-10-30 20:30:31'),
+('jayesh@gmail.com', 3, '2019-10-30 20:32:33'),
+('jayesh@gmail.com', 1, '2019-10-30 20:34:46'),
+('jayesh@gmail.com', 3, '2019-10-30 20:39:13'),
+('jayesh@gmail.com', 1, '2019-10-30 20:39:16'),
+('jayesh@gmail.com', 1, '2019-10-30 20:51:17'),
+('jayesh@gmail.com', 1, '2019-10-30 21:04:40'),
+('jayesh@gmail.com', 1, '2019-10-30 21:12:37'),
+('jayesh@gmail.com', 1, '2019-10-30 21:14:45'),
+('jayesh@gmail.com', 1, '2019-10-31 06:55:41'),
+('jayesh@gmail.com', 1, '2019-10-31 06:56:28'),
+('jayesh@gmail.com', 1, '2019-10-31 07:02:23'),
+('jayesh@gmail.com', 1, '2019-10-31 07:12:30'),
+('jayesh@gmail.com', 1, '2019-10-31 07:15:23'),
+('jayesh@gmail.com', 1, '2019-10-31 07:18:48'),
+('jayesh@gmail.com', 1, '2019-10-31 08:55:17'),
+('jayesh@gmail.com', 1, '2019-10-31 09:01:52'),
+('jayesh@gmail.com', 3, '2019-10-31 09:09:20');
 
 -- --------------------------------------------------------
 

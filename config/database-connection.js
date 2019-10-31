@@ -2,9 +2,9 @@ var mysql = require('mysql')
 
 var connection = mysql.createConnection({
   host: 'remotemysql.com',
-  user: 'XFE1iAH6p1',
-  password: 'QyI1GVn79q',
-  database: 'XFE1iAH6p1'
+  user: 'vXuJMPGUOR',
+  password: '1qA6DALdlN',
+  database: 'vXuJMPGUOR'
   // host: 'localhost',
   // user: 'root',
   // password: '',
